@@ -10,3 +10,5 @@ Purpose of the folders :
 2) Public (Contains files available to users HTML,CSS,JS)
 
 3) Config (Configuration files, e.g for connecting to the database)
+
+4) Images (Photos needed for the website to function)
