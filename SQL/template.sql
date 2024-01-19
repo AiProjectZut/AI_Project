@@ -28,8 +28,9 @@ CREATE TABLE IF NOT EXISTS `Poziom` (
 CREATE TABLE IF NOT EXISTS `Raport` (
                                         `UserID` INTEGER,
                                         `Poziom` INTEGER,
-                                        `Projekt` varchar(255) DEFAULT NULL,
                                         `Skutecznosc` varchar(255) DEFAULT NULL,
+                                        `Predkosc` INTEGER,
+                                        `Dokladnosc` INTEGER,
                                         FOREIGN KEY (`UserID`) REFERENCES `Uzytkownik` (`UserID`),
                                         FOREIGN KEY (`Poziom`) REFERENCES `Poziom` (`Poziom_PK`)
 );
@@ -38,7 +39,8 @@ CREATE TABLE IF NOT EXISTS `Raport` (
 CREATE TABLE IF NOT EXISTS `Tekst` (
                                        `UserID` INTEGER,
                                        `Tekst_przekazany_uzytkownika` text DEFAULT NULL,
-                                       `Dluzsosc` INTEGER DEFAULT NULL,
+                                       `Dlugosc` INTEGER DEFAULT NULL,
+                                       `Zlozonosc` varchar(255) DEFAULT NULL,
                                        `Jezyk` varchar(255) DEFAULT NULL,
                                        FOREIGN KEY (`UserID`) REFERENCES `Uzytkownik` (`UserID`)
 );
