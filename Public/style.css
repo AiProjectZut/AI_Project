@@ -1,0 +1,64 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+  }
+  
+  header {
+    background-color: rgba(255, 255, 255, 0.8);
+  }
+  
+  nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+  }
+  
+  .logo {
+    font-weight: bold;
+  }
+  
+  .navigation button {
+    padding: 10px 20px;
+    margin-left: 10px;
+    border: none;
+    background-color: blue;
+    color: white;
+    cursor: pointer;
+  }
+  
+  #register {
+    background-color: orange;
+  }
+  
+  .hero {
+    background-image: url('background.jpg');
+    background-size: cover;
+    background-position: center;
+    color: white;
+    text-align: center;
+    padding: 100px;
+  }
+  
+  .hero-content h1 {
+    font-size: 3em;
+    margin-bottom: 0.5em;
+  }
+  
+  .hero-content p {
+    font-size: 1.2em;
+  }
+  
+  #start, #choose-lesson {
+    padding: 10px 30px;
+    background-color: green;
+    border: none;
+    margin-top: 20px;
+    font-size: 1em;
+    cursor: pointer;
+  }
+  
+  #choose-lesson {
+    background-color: red;
+  }
+  
