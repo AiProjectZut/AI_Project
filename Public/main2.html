@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Logowanie - Kurs Pisania</title>
+    <title>Rejestracja - Kurs Pisania</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
@@ -38,7 +38,7 @@
     </style>
 </head>
 <body class="bg-main-pattern flex items-center justify-center h-screen">
-    <div class="bg-white p-8 rounded-lg shadow-md w-full max-w-sm">
+    <div class="bg-white p-8 rounded-lg shadow-md w-full max-w-md">
         <div class="flex justify-between items-center mb-8">
             <a href="#" class="text-blue-600 text-xl font-bold">
                 <i class="fas fa-keyboard mr-2"></i>Kurs Pisania
@@ -50,15 +50,25 @@
         </div>
         <div class="mb-4 relative">
             <i class="fas fa-user input-icon"></i>
-            <input type="text" class="pl-14 pr-4 py-3 rounded-full w-full border-2 border-blue-600" placeholder="Nazwa konta" value="kowalski_jan">
+            <input type="text" class="pl-14 pr-4 py-3 rounded-full w-full border-2 border-blue-600" placeholder="Imię i Nazwisko" value="Jan Kowalski">
+        </div>
+        <div class="mb-4 relative">
+            <i class="fas fa-user input-icon"></i>
+            <input type="text" class="pl-14 pr-4 py-3 rounded-full w-full border-2 border-blue-600" placeholder="Nazwa Konta" value="kowalski_jan">
+        </div>
+        <div class="mb-4 relative">
+            <i class="fas fa-lock input-icon"></i>
+            <input type="password" class="pl-14 pr-4 py-3 rounded-full w-full border-2 border-blue-600" placeholder="Hasło" value="**********">
+            <i class="fas fa-eye-slash absolute right-5 top-3"></i>
         </div>
         <div class="mb-6 relative">
             <i class="fas fa-lock input-icon"></i>
-            <input type="password" class="pl-14 pr-4 py-3 rounded-full w-full border-2 border-blue-600" placeholder="Password" value="**********">
+            <input type="password" class="pl-14 pr-4 py-3 rounded-full w-full border-2 border-blue-600" placeholder="Powtórz hasło" value="**********">
             <i class="fas fa-eye-slash absolute right-5 top-3"></i>
         </div>
-        <button class="w-full bg-black text-white py-3 rounded-full font-bold mb-6">Zaloguj</button>
+        <button class="w-full bg-black text-white py-3 rounded-full font-bold mb-6">Stwórz konto</button>
         <div class="text-center social-icons mb-6">
+            <span class="text-sm text-gray-600 mb-2 block">albo stwórz konto w oparciu o</span>
             <a href="#" class="facebook">
                 <i class="fab fa-facebook-f"></i>
             </a>
@@ -73,7 +83,7 @@
             </a>
         </div>
         <div class="text-center text-sm">
-            Nie masz jeszcze swojego konta? <a href="#" class="text-blue-600 font-bold">Zarejestruj się</a>
+            Posiadasz już konto? <a href="#" class="text-blue-600 font-bold">Zaloguj</a>
         </div>
     </div>
 </body>
