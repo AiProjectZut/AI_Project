@@ -36,19 +36,68 @@
             font-size: 1rem; /* 16px */
             color: #6B7280; /* Gray-500 */
         }
-        .keyboard {
-            background-image: url('https://placehold.co/600x300?text=Keyboard+Layout');
-            background-repeat: no-repeat;
-            background-position: center;
-            background-size: cover;
-            height: 300px;
-        }
+        
+        #keyboard {
+    width: 60%; /* Szerokość kontenera klawiatury */
+    margin: auto;
+    padding: 20px;
+    background-color: #f3f3f3; /* Tło klawiatury */
+    border-radius: 10px; /* Zaokrąglenie rogów */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Cień klawiatury */
+}
+
+.key-row {
+    display: flex; /* Ułożenie klawiszy w poziomie */
+    justify-content: center; /* Wyśrodkowanie klawiszy */
+}
+
+.key.space.active {
+    background-color: #4CAF50; /* Kolor tła klawisza spacji przy naciśnięciu */
+    color: #fff; /* Kolor tekstu klawisza spacji przy naciśnięciu */
+}
+
+.key.space {
+    width: 300px; /* Szerokość klawisza spacji - dostosuj według potrzeb */
+    height: 40px; /* Wysokość klawisza */
+    margin: 5px; /* Odstępy między klawiszami */
+    border: 1px solid #ccc; /* Ramka klawisza */
+    border-radius: 5px; /* Zaokrąglenie rogów klawisza */
+    background-color: #fff; /* Tło klawisza */
+    display: flex;
+    justify-content: center; /* Wyśrodkowanie tekstu na klawiszu */
+    align-items: center;
+    font-size: 16px; /* Rozmiar czcionki na klawiszu */
+    cursor: pointer; /* Kursor ręka przy najechaniu */
+    transition: background-color 0.3s; /* Animacja tła przy najechaniu */
+}
+.key {
+    width: 40px; /* Szerokość klawisza */
+    height: 40px; /* Wysokość klawisza */
+    margin: 5px; /* Odstępy między klawiszami */
+    border: 1px solid #ccc; /* Ramka klawisza */
+    border-radius: 5px; /* Zaokrąglenie rogów klawisza */
+    background-color: #fff; /* Tło klawisza */
+    display: flex;
+    justify-content: center; /* Wyśrodkowanie tekstu na klawiszu */
+    align-items: center;
+    font-size: 16px; /* Rozmiar czcionki na klawiszu */
+    cursor: pointer; /* Kursor ręka przy najechaniu */
+    transition: background-color 0.3s; /* Animacja tła przy najechaniu */
+}
+
+.key.active {
+    background-color: #4CAF50; /* Kolor tła klawisza przy naciśnięciu */
+    color: #fff; /* Kolor tekstu klawisza przy naciśnięciu */
+}
         .footer {
             text-align: center;
             color: #6B7280; /* Gray-500 */
             font-size: 0.875rem; /* 14px */
             margin-top: 2rem;
         }
+
+
+
     </style>
 </head>
 <body class="bg-blue-50">
@@ -72,7 +121,44 @@
             <div id="accuracy">Accuracy: 0%</div>
             <div id="timeTaken">Time: 0 seconds</div>
         </div>
-        <div class="keyboard"></div>
+        <div id="keyboard">
+            <div class="key-row">
+                <div id="keyQ" class="key">Q</div>
+                <div id="keyW" class="key">W</div>
+                <div id="keyE" class="key">E</div>
+                <div id="keyR" class="key">R</div>
+                <div id="keyT" class="key">T</div>
+                <div id="keyY" class="key">Y</div>
+                <div id="keyU" class="key">U</div>
+                <div id="keyI" class="key">I</div>
+                <div id="keyO" class="key">O</div>
+                <div id="keyP" class="key">P</div>
+            </div>
+            <div class="key-row">
+                <div id="keyA" class="key">A</div>
+                <div id="keyS" class="key">S</div>
+                <div id="keyD" class="key">D</div>
+                <div id="keyF" class="key">F</div>
+                <div id="keyG" class="key">G</div>
+                <div id="keyH" class="key">H</div>
+                <div id="keyJ" class="key">J</div>
+                <div id="keyK" class="key">K</div>
+                <div id="keyL" class="key">L</div>
+        </div>
+            <div class="key-row">
+                <div id="keyZ" class="key">Z</div>
+                <div id="keyX" class="key">X</div>
+                <div id="keyC" class="key">C</div>
+                <div id="keyV" class="key">V</div>
+                <div id="keyB" class="key">B</div>
+                <div id="keyN" class="key">N</div>
+                <div id="keyM" class="key">M</div>
+                <div id="key," class="key">,</div>
+                <div id="key." class="key">.</div>
+    </div>
+        <div class="key-row">
+                <div id="keySpace" class="key space"> </div>
+    </div>
         <footer class="footer">
             Stworzono przez team ToughFlour, All Right Reserved
         </footer>
