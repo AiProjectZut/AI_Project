@@ -1,51 +1,54 @@
 <!DOCTYPE html>
 <html lang="pl">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kurs Pisania</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
-    <style>
-        body {
-            font-family: 'Roboto', sans-serif;
-        }
-        .bg-main-pattern {
-            /* Replace with the actual image URL after placeholder replacement */
-            background-image: url('background.jpg');
-            background-size: cover;
-            background-position: center;
-        }
-        .bg-hand-keyboard {
-            /* Replace with the actual image URL after placeholder replacement */
-            background-image: url('background.jpg');
-            background-size: cover;
-            background-position: center;
-        }
-    </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Kurs Pisania</title>
+<script src="https://cdn.tailwindcss.com"></script>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+<style>
+       body {
+           font-family: 'Roboto', sans-serif;
+       }
+       .bg-main-pattern {
+           background-image: url('background.jpg');
+           background-size: cover;
+           background-position: center;
+       }
+       .bg-hand-keyboard {
+           background-image: url('background.jpg');
+           background-size: cover;
+           background-position: center;
+       }
+</style>
+<script>
+       function redirectTo(url) {
+           window.location.href = url;
+       }
+</script>
 </head>
 <body class="bg-main-pattern">
-    <div class="container mx-auto px-4">
-        <nav class="flex justify-between items-center py-4">
-            <a href="#" class="text-white text-2xl font-bold">
-                <i class="fas fa-keyboard mr-2"></i>Kurs Pisania
-            </a>
-            <div>
-                <button class="text-white bg-transparent hover:bg-white hover:text-blue-800 font-semibold py-2 px-4 border border-white hover:border-transparent rounded">
-                    Log in
-                </button>
-                <button class="text-blue-800 bg-white font-semibold py-2 px-4 border border-white rounded ml-4">
-                    Zarejestruj się
-                </button>
-            </div>
-        </nav>
-        <div class="text-center text-white p-10 bg-hand-keyboard bg-opacity-75 rounded-lg">
-            <h2 class="text-5xl font-bold mb-6">Za darmo, online, bez rejestracji.</h2>
-            <p class="text-lg mb-8">Wystarczą dwa tygodnie po 15 min dziennie, by opanować podstawowe znaki!</p>
-            <button class="text-blue-800 bg-white font-bold py-3 px-8 rounded-full text-lg mb-3">START</button>
-            <button class="text-white font-semibold py-2 px-4 border border-white rounded-full">Wybierz lekcję</button>
-        </div>
-    </div>
+<div class="container mx-auto px-4">
+<nav class="flex justify-between items-center py-4">
+<a href="#" class="text-white text-2xl font-bold">
+<i class="fas fa-keyboard mr-2"></i>Kurs Pisania
+</a>
+<div>
+<button onclick="redirectTo('main.html')" class="text-white bg-transparent hover:bg-white hover:text-blue-800 font-semibold py-2 px-4 border border-white hover:border-transparent rounded">
+                   Log in
+</button>
+<button onclick="redirectTo('main2.html')" class="text-blue-800 bg-white font-semibold py-2 px-4 border border-white rounded ml-4">
+                   Zarejestruj się
+</button>
+</div>
+</nav>
+<div class="text-center text-white p-10 bg-hand-keyboard bg-opacity-75 rounded-lg">
+<h2 class="text-5xl font-bold mb-6">Za darmo, online, bez rejestracji.</h2>
+<p class="text-lg mb-8">Wystarczą dwa tygodnie po 15 min dziennie, by opanować podstawowe znaki!</p>
+<button onclick="redirectTo('pisanie.html')" class="text-blue-800 bg-white font-bold py-3 px-8 rounded-full text-lg mb-3">START</button>
+<button onclick="redirectTo('main3.html')" class="text-white font-semibold py-2 px-4 border border-white rounded-full">Wybierz lekcję</button>
+</div>
+</div>
 </body>
 </html>

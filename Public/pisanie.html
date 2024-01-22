@@ -99,6 +99,11 @@
 
 
     </style>
+    <script>
+        function redirectTo(url) {
+            window.location.href = url;
+        }
+    </script>
 </head>
 <body class="bg-blue-50">
     <header class="text-center p-4 bg-white shadow">
@@ -107,10 +112,10 @@
                 <a href="#" class="text-2xl font-bold text-blue-600">Kurs Pisania</a>
             </div>
             <div>
-                <a href="#" class="text-blue-600">Strona główna</a>
-                <a href="#" class="text-blue-600 ml-4">Wybór lekcji</a>
-                <button class="bg-blue-600 text-white px-6 py-2 rounded-md ml-4">Zaloguj się</button>
-                <button class="bg-blue-700 text-white px-6 py-2 rounded-md ml-2">Zarejestruj się</button>
+                <a href="main4.html" class="text-blue-600">Strona główna</a>
+                <a href="main3.html" class="text-blue-600 ml-4">Wybór lekcji</a>
+                <button onclick="redirectTo('main.html')" class="bg-blue-600 text-white px-6 py-2 rounded-md ml-4">Zaloguj się</button>
+                <button onclick="redirectTo('main2.html')" class="bg-blue-700 text-white px-6 py-2 rounded-md ml-2">Zarejestruj się</button>
             </div>
         </nav>
     </header>
